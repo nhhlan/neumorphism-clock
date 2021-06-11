@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <script type='module' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'></script>
+    <script nomodule='' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <div class="toggleDarkmode">
+        <div class="switch switch__darkmode">
+          <input id="dark" type="checkbox">
+          <label for="dark"></label>
+        </div>
+      </div>
+
+      <div class="components">
+
+        <div class="form">
+          <input type="password" class="form__input" placeholder="Input password">
+        </div>
+        
+        <div class="search">
+          <input type="text" class="search__input" placeholder="Search...">
+          <div class="search__icon">
+            <ion-icon name="search"></ion-icon>
+          </div>
+        </div>
+
+        <div class="btn btn__primary"><p>Button</p></div>
+        
+        <div class="clock">
+          <div class="hand hours"></div>
+          <div class="hand minutes"></div>
+          <div class="hand seconds"></div>
+          <div class="point"></div>
+        </div>
+
+        <div class="icon">
+          <div class="icon__home">
+            <ion-icon name="home"></ion-icon></div>
+          <div class="icon__account">
+            <ion-icon name="person"></ion-icon></div>
+        </div>
+        
+        <div class="alarm__1">
+          <div class="alarm__text">
+            <h1>08:30</h1>
+            <p>Wake up</p>
+          </div>
+          <div class="switch">
+              <input id="switch-1" type="checkbox" checked>
+              <label for="switch-1"></label>
+          </div>
+        </div>
+
+        <div class="alarm__2">
+          <div class="alarm__text">
+            <h1>09:00</h1>
+            <p>You're late!!!</p>
+          </div>
+          <div class="switch">
+              <input id="switch-2" type="checkbox">
+              <label for="switch-2"></label>
+          </div>
+        </div>          
+        
+        <div class="slider">
+          <div class="slider__box">
+            <span class="slider__btn" id="find"></span>
+            <span class="slider__color"></span>
+            <span class="slider__tooltip">50%</span>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
